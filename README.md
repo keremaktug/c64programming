@@ -4,6 +4,8 @@ The source code of a beginner course on 6502 assembly for the Commodore 64. Ther
 
 Every lesson is one file, numbered in order. A video explains each lesson line by line.
 
+[Watch the 47-second trailer](https://youtu.be/l5zhDhl9gwY) · [Start with Lesson 1](https://youtu.be/BWzHGy1zKog) · [View all 59 lessons](https://www.youtube.com/playlist?list=PLExA2XuwkCv0)
+
 ## What you need
 
 - [KickAssembler](http://theweb.dk/KickAssembler/) to turn the source into a program. It needs Java.
