@@ -161,3 +161,7 @@ The game is built in eight steps. Each file is the whole game so far.
 | 59. Title Screen and Restart | [59.brick_breaker.asm](59.brick_breaker.asm) |
 
 `59.brick_breaker.asm` is the finished game.
+
+## Extra: Rocky
+
+[rocky/](rocky/) is a small boxing game, made after the course with the same tools. It has a bitmap title screen with a raster effect, a ring scene and two boxers made of sprites.
