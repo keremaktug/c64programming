@@ -138,7 +138,7 @@ waitFrame:
 !arrive:
     cmp $d012
     bne !arrive-
-    rts
+    jmp updateMusic
 
 readControls:
     lda #$ff

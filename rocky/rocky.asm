@@ -27,6 +27,7 @@ start:
     sta titleWavePhase
     lda #TITLE_WAVE_HOLD_INTERVAL
     sta titleWaveHold
+    jsr initMusic
     lda #$03                    // VIC bank 0.
     ldx #>titleColors
     ldy #title.getBackgroundColor()
@@ -93,6 +94,7 @@ waitForSpace:
     sta $d021
 
 readTitleInput:
+    jsr updateMusic             // The title raster work is complete for this frame.
     jsr scanKeyboard
     jsr getKey
     cmp #$20
@@ -174,6 +176,8 @@ titleColors:
     .fill title.getColorRamSize(), title.getColorRam(i)
 * = $1400 "Fight logic"
 #import "fight.asm"
+* = * "SID music"
+#import "music.asm"
 * = $2000 "Title bitmap"
     .fill title.getBitmapSize(), title.getBitmap(i)
 
@@ -186,3 +190,7 @@ ringColors:
     .import binary "fight-gfx.bin"
 * = RING_BITMAP "Ring bitmap"
     .fill ring.getBitmapSize(), ring.getBitmap(i)
+
+* = $8000 "Gonna Fly Now note data"
+rockyTheme:
+    .import binary "rocky-theme.bin"

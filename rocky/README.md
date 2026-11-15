@@ -12,7 +12,7 @@ java -jar KickAss.jar rocky.asm
 x64sc rocky.prg
 ```
 
-`rocky.asm` imports `fight.asm` and loads the graphics from the `.bin` files, so keep them in the same folder.
+`rocky.asm` imports `fight.asm` and `music.asm` and loads the graphics and music from the `.bin` files. Keep these files in the same folder.
 
 ## Controls
 
